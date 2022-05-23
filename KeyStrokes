@@ -1,0 +1,480 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local KeyL = Instance.new("ScreenGui")
+local Holder = Instance.new("Frame")
+local W = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local S = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local LMB = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local D = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local LCPS = Instance.new("TextLabel")
+local count = Instance.new("TextLabel")
+local RCPS = Instance.new("TextLabel")
+local count_2 = Instance.new("TextLabel")
+local A = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local RMB = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Space = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local TopBar = Instance.new("Frame")
+
+--Properties:
+
+KeyL.Name = "KeyL"
+KeyL.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KeyL.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Holder.Name = "Holder"
+Holder.Parent = KeyL
+Holder.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0.73840487, 0, 0.583732069, 0)
+Holder.Size = UDim2.new(0, 240, 0, 251)
+
+W.Name = "W"
+W.Parent = Holder
+W.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+W.BorderSizePixel = 0
+W.Position = UDim2.new(0.37214914, 0, 0.049944818, 0)
+W.Size = UDim2.new(0, 60, 0, 60)
+
+TextLabel.Parent = W
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.216666669, 0, 0.166666672, 0)
+TextLabel.Size = UDim2.new(0, 35, 0, 39)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "W"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner.Parent = W
+
+S.Name = "S"
+S.Parent = Holder
+S.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+S.BorderSizePixel = 0
+S.Position = UDim2.new(0.37214914, 0, 0.342401922, 0)
+S.Size = UDim2.new(0, 60, 0, 60)
+
+TextLabel_2.Parent = S
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.216666684, 0, 0.166666687, 0)
+TextLabel_2.Size = UDim2.new(0, 35, 0, 39)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "S"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_2.Parent = S
+
+LMB.Name = "LMB"
+LMB.Parent = Holder
+LMB.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LMB.BorderSizePixel = 0
+LMB.Position = UDim2.new(0.0611841828, 0, 0.613358557, 0)
+LMB.Size = UDim2.new(0, 100, 0, 40)
+
+TextLabel_3.Parent = LMB
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.193333387, 0, 0.0500000119, 0)
+TextLabel_3.Size = UDim2.new(0, 60, 0, 38)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "LMB"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UICorner_3.Parent = LMB
+
+D.Name = "D"
+D.Parent = Holder
+D.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+D.BorderSizePixel = 0
+D.Position = UDim2.new(0.678499997, 0, 0.342239052, 0)
+D.Size = UDim2.new(0, 60, 0, 60)
+
+TextLabel_4.Parent = D
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.199999988, 0, 0.166666687, 0)
+TextLabel_4.Size = UDim2.new(0, 35, 0, 39)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "D"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UICorner_4.Parent = D
+
+LCPS.Name = "LCPS"
+LCPS.Parent = Holder
+LCPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LCPS.BackgroundTransparency = 1.000
+LCPS.Position = UDim2.new(0.0625, 0, 0.0456852801, 0)
+LCPS.Size = UDim2.new(0, 60, 0, 30)
+LCPS.Font = Enum.Font.Gotham
+LCPS.Text = "LMB CPS"
+LCPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+LCPS.TextScaled = true
+LCPS.TextSize = 14.000
+LCPS.TextWrapped = true
+
+count.Name = "count"
+count.Parent = LCPS
+count.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+count.BackgroundTransparency = 1.000
+count.Position = UDim2.new(0, 0, 1.26689351, 0)
+count.Size = UDim2.new(0, 60, 0, 20)
+count.Font = Enum.Font.Gotham
+count.Text = "0"
+count.TextColor3 = Color3.fromRGB(255, 255, 255)
+count.TextScaled = true
+count.TextSize = 14.000
+count.TextWrapped = true
+
+RCPS.Name = "RCPS"
+RCPS.Parent = Holder
+RCPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RCPS.BackgroundTransparency = 1.000
+RCPS.Position = UDim2.new(0.683333337, 0, 0.0456852801, 0)
+RCPS.Size = UDim2.new(0, 60, 0, 30)
+RCPS.Font = Enum.Font.Gotham
+RCPS.Text = "RMB CPS"
+RCPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+RCPS.TextScaled = true
+RCPS.TextSize = 14.000
+RCPS.TextWrapped = true
+
+count_2.Name = "count"
+count_2.Parent = RCPS
+count_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+count_2.BackgroundTransparency = 1.000
+count_2.Position = UDim2.new(0, 0, 1.29759526, 0)
+count_2.Size = UDim2.new(0, 60, 0, 21)
+count_2.Font = Enum.Font.Gotham
+count_2.Text = "0"
+count_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+count_2.TextScaled = true
+count_2.TextSize = 14.000
+count_2.TextWrapped = true
+
+A.Name = "A"
+A.Parent = Holder
+A.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+A.BorderSizePixel = 0
+A.Position = UDim2.new(0.0611842871, 0, 0.338417888, 0)
+A.Size = UDim2.new(0, 60, 0, 60)
+
+TextLabel_5.Parent = A
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.200000018, 0, 0.183333337, 0)
+TextLabel_5.Size = UDim2.new(0, 35, 0, 39)
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = "A"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UICorner_5.Parent = A
+
+RMB.Name = "RMB"
+RMB.Parent = Holder
+RMB.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RMB.BorderSizePixel = 0
+RMB.Position = UDim2.new(0.512499988, 0, 0.621326685, 0)
+RMB.Size = UDim2.new(0, 99, 0, 38)
+
+TextLabel_6.Parent = RMB
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.189394236, 0, -0.0263158083, 0)
+TextLabel_6.Size = UDim2.new(0, 60, 0, 38)
+TextLabel_6.Font = Enum.Font.Gotham
+TextLabel_6.Text = "RMB"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UICorner_6.Parent = RMB
+
+Space.Name = "Space"
+Space.Parent = Holder
+Space.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Space.BorderSizePixel = 0
+Space.Position = UDim2.new(0.0570175163, 0, 0.816545844, 0)
+Space.Size = UDim2.new(0, 208, 0, 38)
+
+TextLabel_7.Parent = Space
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0, 0, 0.0263157897, 0)
+TextLabel_7.Size = UDim2.new(0, 208, 0, 37)
+TextLabel_7.Font = Enum.Font.Gotham
+TextLabel_7.Text = "___"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+TextLabel_7.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_7.Parent = Space
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Holder
+TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.Size = UDim2.new(0, 240, 0, 0)
+
+-- Scripts:
+
+local function UTEPR_fake_script() -- W.LocalScript 
+	local script = Instance.new('LocalScript', W)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.W then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.W then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+	end)
+end
+coroutine.wrap(UTEPR_fake_script)()
+local function OONXFOZ_fake_script() -- S.LocalScript 
+	local script = Instance.new('LocalScript', S)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.S then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.S then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+	end)
+end
+coroutine.wrap(OONXFOZ_fake_script)()
+local function MYWQF_fake_script() -- LMB.LocalScript 
+	local script = Instance.new('LocalScript', LMB)
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	
+	mouse.Button1Down:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(80,  80, 80)
+	end)
+	
+	mouse.Button1Up:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	end)
+end
+coroutine.wrap(MYWQF_fake_script)()
+local function JFVIAG_fake_script() -- D.LocalScript 
+	local script = Instance.new('LocalScript', D)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.D then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.D then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+	end)
+	
+end
+coroutine.wrap(JFVIAG_fake_script)()
+local function NIFO_fake_script() -- Holder.Drag 
+	local script = Instance.new('LocalScript', Holder)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			if gui.Visible then
+				update(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(NIFO_fake_script)()
+local function INUSBJU_fake_script() -- A.LocalScript 
+	local script = Instance.new('LocalScript', A)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.A then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.A then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+	end)
+end
+coroutine.wrap(INUSBJU_fake_script)()
+local function YDKEDN_fake_script() -- RMB.LocalScript 
+	local script = Instance.new('LocalScript', RMB)
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	
+	mouse.Button2Down:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(80,  80, 80)
+	end)
+	
+	mouse.Button2Up:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	end)
+end
+coroutine.wrap(YDKEDN_fake_script)()
+local function PLRS_fake_script() -- Space.LocalScript 
+	local script = Instance.new('LocalScript', Space)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.Space then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(inputObject)
+		if inputObject.KeyCode == Enum.KeyCode.Space then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+	end)
+end
+coroutine.wrap(PLRS_fake_script)()
+local function TVLXBMY_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	
+	spawn(function()
+		local clicks = {}
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		mouse.Button1Up:Connect(function()
+			table.insert(clicks, tick())
+		end)
+		while wait() do
+			for i,v in next,clicks do
+				if v+1 < tick() then
+					table.remove(clicks, i)
+				end
+			end
+			script.Parent.Parent.LCPS.count.Text = tostring(#clicks)
+		end
+	end)
+	
+	spawn(function()
+		local clicks = {}
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		mouse.Button2Up:Connect(function()
+			table.insert(clicks, tick())
+		end)
+		while wait() do
+			for i,v in next,clicks do
+				if v+1 < tick() then
+					table.remove(clicks, i)
+				end
+			end
+			script.Parent.Parent.RCPS.count.Text = tostring(#clicks)
+		end
+	end)
+	
+end
+coroutine.wrap(TVLXBMY_fake_script)()
+local function ABZTNBJ_fake_script() -- Holder.Close 
+	local script = Instance.new('LocalScript', Holder)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(A)
+		if A.KeyCode == Enum.KeyCode.Insert then
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
+				else script.Parent.Visible = true
+			end
+		end
+	end)
+	
+	UserInputService.InputBegan:Connect(function(B)
+		if B.KeyCode == Enum.KeyCode.Delete then
+			script.Parent:Remove()
+		end
+	end)
+end
+coroutine.wrap(ABZTNBJ_fake_script)() 
